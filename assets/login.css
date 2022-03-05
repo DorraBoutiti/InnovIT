@@ -1,0 +1,155 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family: "Janna LT", Arial, Helvetica, sans-serif;
+     color: #303433;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    line-height: 2em;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ img{
+    max-width: 100%;
+}
+
+.container{
+    max-width: 450px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: bolder;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+
+.container a{
+    text-decoration: none;
+    color: #9619e9;
+    cursor:grab;
+}
+
+
+.container a:hover{
+    text-decoration: none;
+    color:#fd6f8d;
+    cursor:grab;
+    font-size: large;
+}
+
+
+.separator{
+    width: 265px;
+    height: 4px;
+    background-color: #6159e6;
+    margin-bottom: 24px;
+}
+
+
+form{
+    width : 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.form-control{
+    width: 100%;
+    position: relative;
+    margin-bottom: 24px;
+}
+
+
+input {
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.1em;
+    width : 100%;
+    background: #e6e6e6;
+    color: #303433;
+    letter-spacing: 0.5px;
+    padding: 14px 16px;
+    border: 1px solid #303433;
+}
+
+
+
+/* Start fontawesome */
+
+svg{
+    position: absolute;
+        left: 90%;
+        top: 32%;
+        color : #888;
+}
+
+
+
+path{
+    color: #877575;
+}
+
+
+/* End fontawesome */
+
+/* Start button */
+
+
+.submit{
+    color : #fff;
+    padding : 14px 64px;
+    margin: auto;
+    width : 32px auto;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    background-image: linear-gradient(to right , #9619e9 , #4e4b83 , whitesmoke);
+    cursor: pointer;
+    transition: opacity 0.4s;
+}
+
+.submit:hover{
+    opacity: 0.8;
+}
+
+
+/* End button */
+
+
+/* Start Reponsive */
+
+
+@media (max-width: 780px) {
+
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slide{
+        display: none;
+    }
+}
+
+/* End Responsive */
